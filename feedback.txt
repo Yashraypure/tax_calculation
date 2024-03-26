@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <link rel="stylesheet" href="style.css" /> 
+  <title>Feedback</title> 
+  <style> 
+  body { 
+ background-color: #FCF0EE; 
+ }  
+   
+.button { 
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  transition-duration: 0.4s; 
+  cursor: pointer; 
+    } 
+  
+    .button:hover { 
+  background-color: blue;
+  color: white; 
+} 
+</style> 
+</head> 
+ 
+<body> 
+<img src="F:\clg project\income.png" class="img" height="150" width="250"> 
+  <form> 
+    <table>
+  <h1>Feedback</h1> 
+  <tr>
+   <td><h3>User ID:*</h3></td> 
+  <td><input type="text" placeholder="Enter your UserID" required ></td> </tr></table>
+    <hr>
+    <table>
+      <tr><td><h3>Full Name</h3></td>  
+      <td><input type="text" placeholder="Enter full name" required></td> </tr>
+        <tr><td><h3>Pan Card Number</h3> </td>
+        <td><input type="text" placeholder="Enter Pancard Number" required></td></tr> 
+         <tr><td> <h3>Email</h3> </td>
+          <td><input type="email" placeholder="Enter your email" required> </td></tr>
+          <tr><td> <h3>Contact Number</h3></td>
+            <td><input type="Number" placeholder="Enter Contact Number" required></td></tr> 
+           <tr><td> <h3>Address</h3> </td>
+           <td> <textarea rows="5" cols="20" placeholder="Enter Address" required></textarea> </td></tr>
+           <tr><td> <h3>Message</h3> </td>
+           <td> <textarea rows="5" cols="20" placeholder="Enter message" required></textarea> </td></tr>
+            <br><br> 
+           <tr><td> <input type="submit" class="button" name="submit" > </td></tr>
+            </table>
+              </form> 
+</body> 
+ 
+</html>

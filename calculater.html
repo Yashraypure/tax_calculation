@@ -1,0 +1,259 @@
+<HTML>
+	<head>
+		<style>
+		nav{
+			  flex: 1;
+			  text-align: left;
+		   }
+		
+			.navbar{
+			  display: flex;
+			  align-items: center;
+			  padding: none;
+			  padding-left: 50px;
+			  padding-right: 30ox;
+			  padding-top: none;
+			}
+		
+			nav ul li{
+			  display: inline-block;
+			  margin-right: 70px;
+			}
+		
+			a{
+			  text-decoration: none;
+			  font-size: 20px;
+			  color: black;
+			  font-family: cursive;
+			}
+		button{
+				width: 100%;
+				background: rgba(197, 226, 226, 0.927); 
+				border: 1px solid black;
+				margin: 35px 0 10px;
+				height: 32px;
+				font-size: 12px;
+				border-radius: 20px;
+				padding: 0 10px;
+				box-sizing: border-box;
+				outline: none;
+				color: black;
+				cursor: pointer;
+				}
+				
+		button:active{
+		background-color: grey;
+            
+		}
+		</style>
+		</head>
+		 
+		<style>
+			
+			table {
+				width: 700px;
+				height: 80%;
+				font-size: 20px;
+				font-family: cursive;
+				border-bottom: 20px solid black; /* added "solid" */
+				text-align: center;
+				padding: 2px;
+				color: black;
+				border-radius: 5px;
+				box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.10), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+			}
+			
+
+		th{
+		color:black;	
+		text-align:center;
+		border-radius:5px;
+		}
+
+		.button1{
+			width: 100%;
+			background: rgba(197, 226, 226, 0.927); 
+			border: 1px solid black;
+			margin: 35px 0 10px;
+			height: 32px;
+			font-size: 12px;
+			border-radius: 20px;
+			padding: 0 10px;
+			box-sizing: border-box;
+			outline: none;
+			color: black;
+			cursor: pointer;
+			}
+
+
+
+
+            .bg{
+background-image:url(https://www.youngmoorelaw.com/wp-content/uploads/2018/12/TAX-Background-short.jpg);
+background-size:cover;
+}      
+       .buttoncss{
+                  font-family: cursive;
+                  background-color:transparent;
+                  cursor: pointer;
+                  font-size: 16px;
+                  
+                }
+                 
+
+		</style>
+            <body>
+
+		<script>
+		function calculate()
+		{
+		var age=parseInt(frm.uage.value);
+		var inc=parseInt(frm.income.value);
+		var amount;
+		if(age<=60)
+		{
+			 if(inc<=250000)
+			 {amount=0;}
+			 else if (inc<=500000)
+			 {amount=(inc-250000)*0.1;}
+			 else if(inc<=1000000)
+			 {amount=25000+((inc-500000)*0.2);}
+			 else 
+			 {amount=125000+((inc-1000000)*0.3);}
+		frm.result.value=amount;	 
+		}
+		if(age>60&&age<80)
+		{
+		if(inc<=300000)
+			 {amount=0;}
+			 else if (inc<=500000)
+			 {amount=(inc-300000)*0.1;}
+			 else if(inc<=1000000)
+			 {amount=20000+((inc-500000)*0.2);}
+			 else 
+			 {amount=120000+((inc-1000000)*0.3);}
+		frm.result.value=amount;
+		}
+		if(age>=80)
+		{
+		if(inc<=500000)
+			 {amount=0;}
+			 else if (inc<=1000000)
+			 {amount=(inc-500000)*0.2;}
+			 else 
+			 {amount=100000+((inc-1000000)*0.3);}
+		frm.result.value=amount;
+		}
+		}
+		</script>
+</body>
+		<body class="bg"> 
+			<div class="topbar">
+      <div align="right">
+        <div class="row">
+          <div class="col-sm-8 text-sm">
+            <div class="site-info">
+              <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+              <span class="divider">|</span>
+              <a href="#"><span class="mai-mail text-primary"></span> TAXTONATION.com</a>
+              <a target="_blank" href="https://www.instagram.com/">
+              <img src="https://www.bing.com/th?id=OIP.XgT9d552B6R9C60Ul2yqkAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" height="30" width="30"></a>
+              <a target="_blank" href="https://www.facebook.com/">
+              <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABsbGxscGx4hIR4qLSgtKj04MzM4PV1CR0JHQl2NWGdYWGdYjX2Xe3N7l33gsJycsOD/2c7Z//////////////8BGxsbGxwbHiEhHiotKC0qPTgzMzg9XUJHQkdCXY1YZ1hYZ1iNfZd7c3uXfeCwnJyw4P/Zztn////////////////CABEIAPoA+gMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAABAUDAgEG/9oACAEBAAAAAP0p45/AAAD779/R8k88PgAAA7eq/ZHxxa+gAAB8j0LLfviT8/s9wAAA+YmvXRwhydsAAACH1fbPFk7J9AAAEP3Rtnix9kAAACHroWzxY2uAAOnf2eYyLvoWzxYmsAAWXB5xyKrQtniw9QAB12AecQjs0LZ4sPRAAXaQPGESXaFs8WHcAA0tE44nkJb9G2eLDr+gAaekR4wJtHQtniw+vQADV0yPDBNqaFs8WG6egBp6HToeeTjg/OfzU0LZ4sMADb1gEn5kamhbPFhgAbesAzcAamhbPFhgAaN1NJxjQZ41NC2eLDAANnYM/wDPAamhbPFhgAGzsGf+eA1NC2eLDAANnYM/88BqaFs8WGAAbOwZ/wCeA1NC2eLDAANnYM/88BqaFs8eKAAbGsQYAGlfbPNlgAGnpEeMBdVbPNlgAGnpEeMBdVbwlywADT0iPGAvpt5y4wABoXkuUBq0VfIo8gAAACrar9PEnKX4AAAO9XfsPnDkAAAHuj0AAAAAH//EABgBAQADAQAAAAAAAAAAAAAAAAABAgME/9oACgICEAMQAAAAC0AAAEIkN862AAAJis52tGtaWAAAC9cL2jWtZAATUSlamGlo2pWwAGVoF4vE1w0tG9KyAFZysaRaJiY59LR0Z1sAFWN5jeohHPraOnKJAKThoEtaaUiebW0dOQAUnDSJLRtS9aTz62jpyAApbn0tHTkFJ59bR05AAUtz6WjpyCk8+to6MgAK259LR0ZBWefWY6MwAKWxvMdGYVnDSXRkABWcby3zCs4aGtL1kAABE43rIAAAAB//xAA5EAAAAwQGBwcEAgIDAAAAAAAAAQIDBBFTBRITFDJREBUzUnKCkSAhMDVxc5IxNEBBYYEioUJDUP/aAAgBAQABPwDSa0l+wbdBC8IzF4RmLwjMXhGYvCMxeEZi8IzF4RmLwjMXhGYvCMxeEZi8IzF4RmLwjMXhGYvCMxeEZi8IzF4RmLwjME3RmCaJMR7JnALbKUqozKKgpkhBVnhtD/RA3mjU/RNblF7o+UfwF8o6UfwF7o+UfwF7o6UfwF8o6UfwF7o+UfwF7o6UfwF7o+UfwF7o+UfwF7o6UfwF7o+UfwF7o6UfwF7o+UfwF7o+UfwF7o6UfwF7o+UfwF7o6UfwF8o6UfwF7o+UfwF8o6UfwF7o+UfwF7o6WfwCEurbYtoGKzVicF4d4ghZKLsNlqUomaMRh4eEOSLNn3tDBm1eGn7Wswij1HjaQ9Bq5E1Q1ciaoauRNUNXImqGrkTVDVyJqhq5E1Q1ciaoauRNUNXImqGrkTVDVyJqhq5E1Q1ciaoauRNUNXImqGrkTVDVyJqhq5E1Q1ciaoauRNUDo8v01PoGru1Yd5/TeIOj9GDFv3kfcSjEDYNCKP8AgeEEcS0LOCTDJRIQ2eFfqP8AoLWtotS1d6lGGDEmKIf8jxH+QcDIyMokYeGNi0NJYT7yDqs3lzNJ40B3XWQWhucEGHo6tGp/mqHcot2XF+U/4GZ/yYokztWyc0EHbuNRZKPQ8YDD55cy5A7nBuy4vyn7Az9TFE7dr7Yd8bTjPQ8YDD55cy5Ax2rPiIRERERERERERERERERERERERHsxEREPp7P+xRO3a+2HfG04z0PGAw+eXMuQIxo4iEREREREREREREREREREREQhmteEu7ME6q/axdU7yhdU7yhdU7ygp2SSVHWV3EZiIiIh8+rP0MUTt2vth3xtOM9DxgMPnlzLkCcSfUhEREREREREREREREREREQwYViJa/p+i7S9m04FCIiIh6OK0cIonbtfbDvjacZ6HjAYfPLmXJoiIiIiIiIiIiIiIiIiIhii0aJT17a9m14FCIiIh5xlwiidu19sO+NpxnoeMBh88uZcmiIiIiIiIiIiIiIiIiIiHEoqaH/BF217JrwKERERDfH/AEQonbtfbDvjacZ6HjAYfPLmXJoI+4hEREREREREREREREREOH/b6l2G7WyZKWX1/QUtSjiozM9MRERDXGYonbtfbDvjacZ6HjAYfPLmXJoSf+JenjUd9G3qnsP3258RdqIXjMUTt2vth3xtOM9DxgMPnlzLk0IV+vFiKN+jb1T2H/7c+IhEREdJqgUdFE7dr7Yd8bTjPQ8YDD55cy5NJLzFYsxWLMVizFYsxWLMVizFYsxWLMVizFYsxR7Ji2Q1NaEqgoXR2koDNkzZRqIJMcuwtCGhVVpJRZGLq7yUdBdXeSjoG7B3QwaqskFBGQrFmK5AzM9FE7dr7Yd8bTjPQ8YDD55cy5PGonZt+MvBfzg5tuUuzRO3a+2HfG04z0PGAw+eXMuTxqJ2bfjLwaUODsks19midu19sO+NpxnoeMBh88uZcnjOL2ydktCWlRxUNau8toHZ6Q816iVFVz7Dduh3Z11kZlGHcNau8toNau8toH57Q8kzJCVFDPs0Tt2vth3xtOM9DxgMPnlzLk/AojC8eqexSf2vOnwKJ27X2w742nGeh4wGHzy5lyfgURhePVPYpP7XnT4FE7dr7Yd8bTjPQ8YDD55cy5PwKIwvHqnsUn9rzp8Cidu19sO+NpxnoeMBh88uZcn4FEYXj1T2KT+150+BRO3a+2HfG04z0PGAw+eXMuT8CiMLx6p7FJ/a86fAonbtfbDvjacZ6HjAYeyM6PZcgs15CzXkLNeQs15CzXkLNeQs15CzXkLNeQs15CzXkLNeQs15CzXkLNeQopJpJv6p7FJEZu3OkWa8hZryFmvIWa8hZryFmvIWa8hRaVJbtIyw742nGeh4wGG/2LLl/Ao76NvVPYfthzl4FH7ZfAHfG04z0PGAw3+xZcv4FHfRt6p7D9sOcvAo/bL4A742nGehvgMNvsGXL+BR30beqew/bDnLwKP2q+AO+JfEehqUUmEJtXZqy/ZCunMV0bwro3hXRvCujeFdG8K6N4V0bwro3hXRvCujeFdG8K6N4V0bwro3g4t2LMmtdqlMTIXt1noF7dZ6Be3WegPjy7rYwS2SZ1iFdG8K6N4V0bwro3hXRvCujeFdG8QcoIYNG2YdkwQWgwqLFrXLCfcoP7pGLdiUSPF+U6Oq3leTMsSg0MlqSyRgQElAtK0EogVowPuKKMg0dXR5iaTqLCqJbfpqgaqeJiBqp4mMxqp4mIGqniYgaqeJiBqp4mIGqniYgaqeJiBqp4mIGqniYgaqeJiBqp4mIGqniYgaqeJiBqp4mIGqniYgaqeJiBqp4mIGqniYgaqeJjMaqeJiBqpvMQEUc7su9u1rA2hrImbFNRGYZMiQXZMiMLd0KF3MvotRf2LBcxfUxYLmL6mLBcxfUxYLmL6mLBcxfUxYLmL6mLBcxfUxYLmL6mLBcxfUxYLmL6mLBcxfUxYLmL6mLBcxfUxYLmL6mLBcxfUxYLmL6mLBcxfUxYLmL6mLBcxfUxYLmL6mLBcxfUxd1zFdQl2QQJJJ/wDE/8QAJhEAAgEEAgIBBAMAAAAAAAAAAQIAEBIyURFxIDAxAyFBYTNAQ//aAAgBAgEBPwClraMtbRlraMtbRlraMtbRlraMtbRlraMtbRlraMKkfjwACD9y5pc25c25c25c25c25c25c25c25c25c24HMdRkKLkO4/yPb/maLkvcb08iciD70P8ZouS9xvQTzVPzRsDRcl7h82xNbP3FXijYGi5L3D5viaL8jwfA0XJe68TicTiPjOTXk7n0/g0fE0XJe/NwSsKsPxW1tRBwtHxNFyXv0PiaLkO/B8TRcl79D4mi5DvwfE0XIeh8TRch34PiaLkPQ+JouQ8GxNB8j0PiZwdRQeR9vB8aq/H2MvXcvXcvXcvXcvXcvXcvXcvXcvXcvXcvXcvXcZrj/S//8QAIREAAQQCAwEBAQEAAAAAAAAAAQAQETESUQIgMDJCQEH/2gAIAQMBAT8AaRtSNqRtSNqRtSNqRtSNqRtSNqRtSOn0VAUBQFAUBQFAUBQFAUBYhA/4WNFcfX9MaK4+v6Y0UPMsPpjRQ7h5RLD6Y0UO4tjXQWxo9+N9eTCwxo9+NqQ8ja5GSwsMaPhxtjR6Cwxo+HG2NHoLDGj4cbY0egsMaPgLY10FsfAWxIjoLc8VidLErE6WJ0sTpYnSxKgrE6WJ0sTpYlAR/F//2Q==" height="30" width="30"></a>
+              <a target="_blank" href="https://www.twitter.com/">
+              <img src="data:image/jpeg;base64,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" height="30" width="30"></a>
+            </div>
+          </div>
+          <div class="col-sm-4 text-right text-sm">
+            <div class="social-mini-button">
+              <a href="#"><span class="mai-logo-facebook-f"></span></a>
+              <a href="#"><span class="mai-logo-twitter"></span></a>
+              <a href="#"><span class="mai-logo-dribbble"></span></a>
+              <a href="#"><span class="mai-logo-instagram"></span></a>
+            </div>
+          </div>
+        </div> <!-- .row -->
+
+      </div> <!-- .container -->
+    </div> <!-- .topbar --> 
+ </div> 
+			
+			   
+			<img src="income1.png" class="img" height="100" width="350"> 
+			
+			
+			
+ <nav class="button">
+			   
+    <ul>
+		<li><button class="button" ><a href="index.html">Home</a></button></li>
+		<li><button class="button"><a href="intro.html">Introduction</a></button></li>
+		<li><button class="button"><a href="terms.html">Tax terms</a> </button></li>
+		<li><button class=" button"><a href="taxrates.html">Tax rates</a></button></li>
+		<li><button class="button"><a href="deduction.html">Tax deduction</a></button></li>
+		<li><button class="button"><a href="register.php"> Login/Register </a></button></li>
+		  
+        
+    </ul>
+   </nav> 
+			
+			 </body>
+		
+		
+	<BODY >
+	<form action="payment.php" method="post"  name="frm">
+
+	<BR><BR><BR>
+	<TABLE align="center" cellspacing=4 >
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <h1 align=right;> CALCULATE
+<lottie-player  src="https://assets2.lottiefiles.com/packages/lf20_yczklbgc.json"  background="transparent"  speed="2"  style="width: 300px; height: 300px;"  loop  autoplay></h1></lottie-player>
+	<Thead><th colspan=2 align=center> <h2>TAX CALCULATOR</h2></thead>
+<!--	<form action="payment.php" method="post"> -->
+	<TR>
+	<TD >Choose gender: 
+	<TD><INPUT type="radio" name="gen" value="male">Male
+	<INPUT type="radio" name="gen" value="female">Female<BR></TR>
+	<TR>
+	<TD> Enter your Age:
+	<TD> <INPUT type= text name=uage>
+	</TR>
+	<TR>
+	<TD>Net Taxable Income:
+	<TD><input type=text name=income>
+	</TR>
+	<TR><TD> Your Total Tax is:
+	<TD> <input type= text name=result>
+	</TR> 
+	<TR> <TD  colspan=2>  <Input type=button  color="black" value="CALCULATE" onClick="calculate()" class="button1"> CALCULATE HERE: 
+	</TR>
+	<tr>
+	<td><input type="submit" name="submit" value="Make Payment"> </td> </tr>
+	</form></Table></BODY>
+     </body>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
