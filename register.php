@@ -1,3 +1,7 @@
+<?php 
+include("conn.php");
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -398,7 +402,7 @@ i{
 <input type="text" class="i" placeholder="Your Name" name="name" required>
 <input type="email" class="i" placeholder="Your Email Id" name="email" required>
 <input type="password" class="i" placeholder=" Create Password" name="pwd" required>
-<input type="password" class="i" placeholder="Confirm Password" name="conpwd" required>
+<!-- <input type="password" class="i" placeholder="Confirm Password" name="conpwd" required> -->
 
 
 <input type="submit" name="submit" value="submit" class="button" >
@@ -407,8 +411,8 @@ i{
 </form>
 
 <a href="login.php">
-<button type="button" class="btn" > I have an account</a></button>
-<a href=""> Forgot Password</a>
+<button type="button" class="btn" style="color: black;"> I have an account</a></button>
+<!--<a href=""> Forgot Password</a>  -->
 
   </div>
   </div>
